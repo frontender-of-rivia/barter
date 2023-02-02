@@ -1412,7 +1412,10 @@ ul li:first-child {
   width: 33.33%;
   border-radius: 15px;
   padding: 18px;
-  position: relative; }
+  position: relative;
+  transition: 0.2s ease; }
+  .cover__item:hover {
+    transform: scale(1.05); }
   @media (max-width: 991px) {
     .cover__item {
       width: 335px; } }
@@ -1474,8 +1477,8 @@ ul li:first-child {
   padding: 10px 15px;
   background: #fff;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -1px;
+  top: -1px;
   border-bottom-left-radius: 15px; }
   @media (max-width: 991px) {
     .cover__item-add {
@@ -2988,5 +2991,3 @@ ul li:first-child {
 
 .createfixed__icon {
   max-width: 25px; }
-
-/* my anims */

@@ -888,6 +888,9 @@
     border-radius: 15px
     padding: 18px
     position: relative
+    transition: 0.2s ease
+    &:hover
+        transform: scale(1.05)
     +md
         width: 335px
 .cover__item-title
@@ -934,8 +937,8 @@
     padding: 10px 15px
     background: #fff
     position: absolute
-    right: 0
-    top: 0
+    right: -1px
+    top: -1px
     border-bottom-left-radius: 15px
     +md
         font-size: 12px
@@ -2178,16 +2181,3 @@
         font-size: 13px
 .createfixed__icon
     max-width: 25px
-/* my anims */
-// @keyframes rotation
-//     0%
-//         transform:rotate(0deg)
-//     100%
-//         transform:rotate(360deg)
-// .can__item-circle
-//     animation: 2s rotation infinite linear
-//     -webkit-animation: 2s rotation infinite linear
-    // animation-name: rotation
-    // animation-duration: 5s
-    //animation-iteration-count: infinite
-    //animation-timing-function: linear

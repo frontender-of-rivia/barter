@@ -37,3 +37,19 @@
     from { transform: rotate(0deg) }
     to { transform: rotate(-360deg) }
 }
+/* cover__item */
+.cover__item {
+    animation-name: fadeturn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.8s;
+}
+@keyframes fadeturn {
+    from {
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
