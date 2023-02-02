@@ -63,7 +63,18 @@
 @keyframes pushRelease {
     15% { transform: scale(.7) }
 }
-
+/* moveFromLeft */
+.moveFromLeft { animation-name: moveFromLeft; animation-duration: 1.5s; }
+@keyframes moveFromLeft {
+    from { transform: translateX(-800px) }
+    to { transform: translateX(0) }
+}
+/* moveFromRight */
+.moveFromRight { animation-name: moveFromRight; animation-duration: 1.5s; }
+@keyframes moveFromRight {
+    from { transform: translateX(800px) }
+    to { transform: translateX(0) }
+}
 
 
 
