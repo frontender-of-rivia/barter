@@ -410,18 +410,22 @@ ul li:first-child {
   height: 590px;
   background: url(../img/main-bg.jpg) no-repeat center bottom/cover;
   padding-top: 28px;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 0 0 100px 100px; }
   @media (max-width: 1260px) {
     .main {
       padding-top: 20px;
-      height: 500px; } }
+      height: 500px;
+      border-radius: 0 0 70px 70px; } }
   @media (max-width: 991px) {
     .main {
       height: 590px;
+      border-radius: 0 0 50px 50px;
       background: url(../img/main-bg2.jpg) no-repeat center bottom/cover; } }
   @media (max-width: 500px) {
     .main {
       height: 1037px;
+      border-radius: 0 0 40px 40px;
       background: url(../img/main-bg3.jpg) no-repeat center bottom/cover; } }
   .main .container {
     position: relative;
