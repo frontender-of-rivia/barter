@@ -2160,7 +2160,8 @@ ul li:first-child {
       font-size: 14px; } }
 
 .comments__cases {
-  width: 315px; }
+  width: 315px;
+  cursor: pointer; }
 
 .comments__cases-img {
   width: 315px;
@@ -2258,8 +2259,6 @@ ul li:first-child {
   position: absolute;
   right: 20px;
   bottom: 50px; }
-  .comments__cases-arrow:hover {
-    background: #F4F6F6; }
   .comments__cases-arrow i {
     color: #1D202C; }
 
