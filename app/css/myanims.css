@@ -53,3 +53,91 @@
         opacity: 1;
     }
 }
+/* main__phones  */
+.main__phones { animation-name: moveFromBottom; animation-duration: 1s; }
+@keyframes moveFromBottom {
+    from { transform: translateY(800px) }
+}
+/* push release - иконки на первом экране */
+.pushRelease { animation-name: pushRelease; animation-duration: 4s; animation-iteration-count: infinite; }
+@keyframes pushRelease {
+    15% { transform: scale(.7) }
+}
+
+
+
+
+
+
+
+
+/* leFadeInLeft */
+.leFadeInLeft {
+    animation-name: leFadeInLeft;
+    animation-duration: 2s;
+}
+@keyframes leFadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    to { opacity: 1 }
+}
+/* leFadeInBottom */
+.leFadeInBottom{
+    animation-name: leFadeInBottom;
+    animation-duration: 4s;
+}
+@keyframes leFadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+/* leScaleXIn */
+.leScaleXIn { animation-name: leScaleXIn; animation-duration: 2s; }
+@keyframes leScaleXIn {
+    from {
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    50% { opacity: 1 }
+}
+/* moveFromBottom */
+.moveFromBottom { animation-name: moveFromBottom; animation-duration: 2s; }
+@keyframes moveFromBottom {
+    from { transform: translateY(800px) }
+}
+/* blueInTop */
+.blurInTop { animation-name: blurInTop; animation-duration: 3s; }
+@keyframes blurInTop {
+    from {
+        transform: translateY(100%);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+/* BlurIn */
+.blurIn1 { animation-name: blurIn; animation-duration: 3s;}
+@keyframes blurIn {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+.blurIn2 { animation-name: blurIn; animation-duration: 3.5s;}
+@keyframes blurIn {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+.blurIn3 { animation-name: blurIn; animation-duration: 4s;}
+@keyframes blurIn {
+    from {
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
