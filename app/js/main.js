@@ -72,4 +72,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			});
 		});
 	});
+
+
+	document.querySelector('.can__item-circle').classList.add('magictime', 'fadeIn')
 });

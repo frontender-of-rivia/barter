@@ -1,0 +1,39 @@
+/* can__item-circle */
+.can__item-circle1 {
+    animation-name: unrotate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.can__item-circle2 {
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 35s;
+}
+.can__item-circle3 {
+    animation-name: unrotate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 45s;
+}
+.can__item-circle4 {
+    animation-name: rotate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+.can__item-circle5 {
+    animation-name: unrotate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 35s;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
+}
+@keyframes unrotate {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(-360deg) }
+}
