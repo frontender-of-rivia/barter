@@ -907,6 +907,8 @@ ul li:first-child {
     .fift .container {
       padding-left: 20px;
       padding-right: 20px; } }
+  .fift .simplebar-content-wrapper {
+    padding-right: 0 !important; }
 
 .fift__text {
   text-align: center;
@@ -959,10 +961,10 @@ ul li:first-child {
 
 .fift__box {
   display: grid;
+  grid-template-columns: 296px 296px 322px;
   justify-content: center;
-  grid-template-columns: 300px 320px 320px;
   gap: 50px;
-  max-width: 1000px;
+  max-width: 980px;
   margin: 0 auto;
   padding-top: 10px; }
   @media (max-width: 1260px) {
@@ -983,6 +985,7 @@ ul li:first-child {
 .fift__item {
   text-align: center;
   height: 549px;
+  margin: 0 auto;
   position: relative; }
   @media (max-width: 1260px) {
     .fift__item {
@@ -1000,6 +1003,9 @@ ul li:first-child {
     .fift__item {
       height: 452px; } }
 
+.fift__box .fift__item:first-child {
+  margin-left: -26px; }
+
 .fift__item-content {
   background: #B9FF66;
   padding: 20px;
@@ -1008,9 +1014,9 @@ ul li:first-child {
   font-size: 25px;
   line-height: 120%;
   position: absolute;
-  left: 4%;
+  left: 6.5%;
   bottom: 0;
-  width: 92%; }
+  width: 278px; }
   @media (max-width: 1260px) {
     .fift__item-content {
       font-size: 23px;
