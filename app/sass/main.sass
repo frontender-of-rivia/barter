@@ -56,7 +56,9 @@
     height: 590px
     background: url(../img/main-bg.jpg) no-repeat center bottom/cover
     padding-top: 28px
+    position: relative
     overflow: hidden
+    z-index: 2
     border-radius: 0 0 100px 100px
     +lg
         padding-top: 20px
@@ -172,6 +174,26 @@
             right: -40px
         +md
             top: 210px
+.main__mouse
+    width: 94px
+    height: 54px
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    left: 50%
+    margin-left: 46px
+    top: -30px
+    z-index: 9
+    background: #fff
+    border-radius: 20px
+    cursor: pointer
+    transition: 0.2s ease
+    i
+        color: #1D202C
+        font-size: 20px
+    &:hover
+        background: #B9FF66
 // main icons
 .main__video-icon
     position: absolute
@@ -262,6 +284,8 @@
         display: none
 // love
 .love
+    position: relative
+    z-index: 9
     padding-top: 75px
     padding-bottom: 30px
     +sm
