@@ -487,7 +487,7 @@
     .container
         +lg
             width: 100%
-            padding-left: 40px
+            margin: 0 auto
         +md
             padding-left: 22px
         +xs
@@ -528,7 +528,7 @@
     +md
         padding-left: 12px
         padding-right: 20px
-        height: 500px
+        height: 530px
     +xs
         height: auto
     .simplebar-content-wrapper
@@ -546,12 +546,12 @@
     padding-top: 10px
     +lg
         grid-template-columns: 1fr 1fr 1fr
-        justify-content: space-between
-        gap: 70px
+        justify-content: center
+        gap: 0
     +md
         grid-template-columns: 246px 246px 246px
-        gap: 60px
-        justify-content: center
+        gap: 90px
+        justify-content: flex-start
     +xs
         grid-template-columns: 232px
         justify-content: center
@@ -564,22 +564,26 @@
     position: relative
     +lg
         height: 540px
+        width: 266px
+        margin: 0 auto !important
     img
         margin: 0 auto
         +lg
             border-bottom-left-radius: 50px
             border-bottom-right-radius: 50px
     +md
-        height: 460px
-        width: auto
+        height: 510px
+        width: 250px
     +xs
         height: 452px
 .fift__box
     .fift__item:first-child
         margin-left: 0
+        +lg
+            margin-left: auto
+            margin-right: 0
     .fift__item:last-child
         margin-right: 30px
-        width: 321px
         +md
             width: auto
 .fift__item-content
@@ -596,8 +600,13 @@
     width: 278px
     +lg
         font-size: 23px
+        width: 250px
+        margin-left: -125px
+        bottom: 30px
     +md
         font-size: 21px
+        width: 236px
+        margin-left: -118px
     span
         display: block
         font-weight: 700
@@ -632,14 +641,14 @@
     box-shadow: 0px 17px 32px 0 rgba(46, 66, 255, .15)
     background: linear-gradient(to right bottom, #0039E2, #0075FF)
     +lg
-        width: 316px
+        width: 290px
         padding: 22px 24px
         left: -11px
         top: 150px
     +md
-        width: 267px
-        left: -10px
-        top: 136px
+        width: 255px
+        left: -3px
+        top: 130px
         border-radius: 25px
     +xs
         left: -17px
@@ -1691,12 +1700,21 @@
 /* runline */
 .runline
     text-align: center
+    position: relative
+    height: 177px
+    img
+        height: 177px
+        width: auto
+        max-width: 1000%
+        position: absolute
+        top: 0
+        left: 0
     +md
         height: 200px
         img
-            height: 100%
+            height: 200px
             width: auto
-            max-width: none
+            max-width: 1000%
 /* qa */
 .qa
     padding-top: 65px
