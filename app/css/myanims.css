@@ -95,6 +95,42 @@
     0% { transform: translateX(0); background: #1D202C; }
     100% { transform: translateX(30px); background: #fff; }
 }
+/* viewport */
+/* .viewport {
+    margin: auto;
+    width: 1920px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url("http://localhost/img/run-line2.png");
+    animation: 5s anim1 infinite linear;
+    animation-delay: 2s;
+ }
+ @keyframes anim1 {
+    from {
+       background-position: 0 0;
+    }
+    to {
+       background-position: -250px 0;
+    }
+ } */
+ .viewport {
+    background-image: url("../img/run-line4.png");
+    animation: 5s anim1 infinite linear;
+    animation-delay: 0s;
+ }
+ @keyframes anim1 {
+    from {
+       background-position: 0 0;
+    }
+    to {
+       background-position: -2813px 0;
+    }
+ }
+
+
+
+
+
 
 
 /* leFadeInLeft */

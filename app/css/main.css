@@ -2350,7 +2350,8 @@ ul li:first-child {
 
 /* comments */
 .comments {
-  padding: 82px 0; }
+  padding: 82px 0;
+  padding-bottom: 135px; }
   @media (max-width: 991px) {
     .comments {
       padding: 60px 0; } }
@@ -2637,7 +2638,7 @@ ul li:first-child {
   height: 177px; }
   .runline img {
     height: 177px;
-    width: auto;
+    width: 100%;
     max-width: 1000%;
     position: absolute;
     top: 0;
@@ -2652,7 +2653,7 @@ ul li:first-child {
 
 /* qa */
 .qa {
-  padding-top: 65px;
+  padding-top: 135px;
   padding-bottom: 50px;
   border-radius: 0 0 100px 100px;
   position: relative;
