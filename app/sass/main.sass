@@ -1762,6 +1762,7 @@
 .today__create
     text-align: center
     margin-bottom: 30px
+    position: relative
 .today__or
     text-transform: uppercase
     color: #A2A9B4
@@ -1771,6 +1772,8 @@
     width: 620px
     margin: 0 auto
     text-align: center
+    position: relative
+    z-index: 3
     +md
         width: 500px
     +sm
@@ -1806,6 +1809,39 @@
         height: 60px
         +md
             height: 52px
+.today__arrow-1
+    position: absolute
+    top: -210px
+    left: -410px
+    +lg
+        left: -480px
+    +md
+        max-width: 330px
+        left: -150px
+        top: -20px
+    +sm
+        left: -240px
+        top: -30px
+    +xs
+        max-width: 140px
+        left: -110px
+        top: -10px
+.today__arrow-2
+    position: absolute
+    right: -390px
+    top: -20px
+    +lg
+        right: -490px
+    +md
+        max-width: 330px
+        right: -150px
+        top: 10px
+    +sm
+        right: -260px
+    +xs
+        max-width: 110px
+        right: -81px
+        top: 10px
 /* runline */
 .runline
     text-align: center

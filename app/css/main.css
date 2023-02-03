@@ -2483,7 +2483,8 @@ ul li:first-child {
 
 .today__create {
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  position: relative; }
 
 .today__or {
   text-transform: uppercase;
@@ -2494,7 +2495,9 @@ ul li:first-child {
 .today__form {
   width: 620px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 3; }
   @media (max-width: 991px) {
     .today__form {
       width: 500px; } }
@@ -2541,6 +2544,49 @@ ul li:first-child {
     @media (max-width: 991px) {
       .today__form-object button {
         height: 52px; } }
+
+.today__arrow-1 {
+  position: absolute;
+  top: -210px;
+  left: -410px; }
+  @media (max-width: 1260px) {
+    .today__arrow-1 {
+      left: -480px; } }
+  @media (max-width: 991px) {
+    .today__arrow-1 {
+      max-width: 330px;
+      left: -150px;
+      top: -20px; } }
+  @media (max-width: 720px) {
+    .today__arrow-1 {
+      left: -240px;
+      top: -30px; } }
+  @media (max-width: 500px) {
+    .today__arrow-1 {
+      max-width: 140px;
+      left: -110px;
+      top: -10px; } }
+
+.today__arrow-2 {
+  position: absolute;
+  right: -390px;
+  top: -20px; }
+  @media (max-width: 1260px) {
+    .today__arrow-2 {
+      right: -490px; } }
+  @media (max-width: 991px) {
+    .today__arrow-2 {
+      max-width: 330px;
+      right: -150px;
+      top: 10px; } }
+  @media (max-width: 720px) {
+    .today__arrow-2 {
+      right: -260px; } }
+  @media (max-width: 500px) {
+    .today__arrow-2 {
+      max-width: 110px;
+      right: -81px;
+      top: 10px; } }
 
 /* runline */
 .runline {
