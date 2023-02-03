@@ -1783,7 +1783,11 @@
         color: #1D202C
 /* today */
 .today
-    padding-bottom: 80px
+    padding-bottom: 130px
+    +lg
+        padding-bottom: 100px
+    +md
+        padding-bottom: 70px
 .today__title-wrap
     margin-bottom: 20px
 .today__text
@@ -1882,22 +1886,18 @@
     text-align: center
     position: relative
     height: 177px
-    img
-        height: 177px
-        width: 100%
-        max-width: 1000%
-        position: absolute
-        top: 0
-        left: 0
+    background-size: cover
+    +lg
+        height: 140px
     +md
-        height: 200px
+        height: 100px
         img
             height: 200px
             width: auto
             max-width: 1000%
 /* qa */
 .qa
-    padding-top: 135px
+    padding-top: 120px
     padding-bottom: 50px
     border-radius: 0 0 100px 100px
     position: relative
@@ -1907,6 +1907,7 @@
         border-radius: 0 0 70px 70px
     +md
         border-radius: 0 0 50px 50px
+        padding-top: 80px
     +xs
         padding-bottom: 35px
         border-radius: 0 0 40px 40px
