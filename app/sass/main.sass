@@ -421,6 +421,8 @@
             background: #1D202C
             +xs
                 background: #0042FF
+        .adv__item-top
+            border-color: #A6EE51
     &:nth-child(2)
         +xs
             background: #BDFF6E
@@ -474,8 +476,9 @@
         display: inline-block
         position: absolute
         left: 15px
-        top: -7px
-        border-radius: 3px
+        top: -6px
+        border-radius: 3px 3px 0 0
+        box-shadow: 0 3px 10px 1px rgba(0,0,0,0.1)
 .adv__spacer
     display: none
     +xs
@@ -613,6 +616,7 @@
         +xs
             min-width: 268px
             margin-left: -134px
+            bottom: 38%
 .fift__box
     .fift__item:first-child
         margin-left: 0
