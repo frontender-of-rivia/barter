@@ -95,13 +95,10 @@
     0% { transform: translateX(0); background: #1D202C; }
     100% { transform: translateX(30px); background: #fff; }
 }
- .viewport {
+.viewport {
     background-image: url("../img/run-line4.png");
     animation: 7s anim1 infinite linear;
     animation-delay: 0s;
- }
-@media screen and (max-width: 700px){
-
 }
 @keyframes anim1 {
     from {
@@ -111,13 +108,20 @@
        background-position: -2813px 0;
     }
  }
-
-
-
-
-
-
-
+/* pullRelease */
+.pullRelease { animation-name: pullRelease; animation-duration: 0.5s; }
+@keyframes pullRelease {
+     15% { transform: scale(1.8) }
+}
+/* flip X */
+.flipX { animation-name: flipX; animation-duration: 1s; }
+@keyframes flipX {
+    from {
+        transform: perspective(600px) rotateX(-180deg);
+        opacity: 0;
+    }
+    to { transform: perspective(600px) rotateX(-360deg) }
+}
 /* leFadeInLeft */
 .leFadeInLeft {
     animation-name: leFadeInLeft;
@@ -133,7 +137,7 @@
 /* leFadeInBottom */
 .leFadeInBottom{
     animation-name: leFadeInBottom;
-    animation-duration: 4s;
+    animation-duration: 1s;
 }
 @keyframes leFadeInBottom {
     from {
@@ -165,26 +169,20 @@
         opacity: 0;
     }
 }
-
 /* BlurIn */
-.blurIn1 { animation-name: blurIn; animation-duration: 3s;}
+.blurIn { animation-name: blurIn; animation-duration: 1s;}
 @keyframes blurIn {
     from {
         filter: blur(20px);
         opacity: 0;
     }
 }
-.blurIn2 { animation-name: blurIn; animation-duration: 3.5s;}
-@keyframes blurIn {
+/* lePushReleaseFrom */
+.lePushReleaseFrom { animation-name: lePushReleaseFrom; animation-duration: 1s; }
+@keyframes lePushReleaseFrom {
     from {
-        filter: blur(20px);
+        transform: scale(3, 3);
         opacity: 0;
     }
-}
-.blurIn3 { animation-name: blurIn; animation-duration: 4s;}
-@keyframes blurIn {
-    from {
-        filter: blur(20px);
-        opacity: 0;
-    }
+    50% { transform: scale(.5, .5) }
 }
