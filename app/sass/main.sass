@@ -1022,18 +1022,21 @@
     color: #a2a9b4
     +md
         font-size: 14px
-        margin-bottom: 40px
+        margin-bottom: 70px
     +sm
-        margin-bottom: 30px
+        margin-bottom: 90px
+    +xs
+        max-width: 335px
+        margin-bottom: 55px
 .get__wrapper
     display: flex
     justify-content: space-between
-    padding: 0 100px
+    padding: 0 160px
     padding-right: 152px
     position: relative
     +lg
         padding: 0
-        padding-left: 110px
+        padding-left: 130px
     +md
         flex-direction: column
         padding-left: 0
@@ -1044,9 +1047,15 @@
     +md
         left: 50%
         margin-left: -281px
-        top: 0
+        top: -40px
     +sm
-        margin-left: -220px
+        margin-left: -190px
+        top: -90px
+    +xs
+        left: 50%
+        margin-left: -200px
+        width: 462px
+        top: -70px
 .get__blues
     position: absolute
     left: 50%
@@ -1056,18 +1065,31 @@
         margin-left: -150px
     +md
         position: static
-        margin-left: 0
+        margin-left: auto
+        margin-right: auto
         margin-bottom: 26px
+        max-width: 220px
+    img
+        +sm
+            width: 230px
 .get__left
-    padding-top: 102px
+    padding-top: 120px
+    +lg
+        padding-top: 97px
     +md
         text-align: center
         padding-top: 0
 .get__item-img
     text-align: center
-.gsi2
+.gsi1-5
     display: none
     +md
+        display: block
+    +sm
+        display: none
+.gsi2
+    display: none
+    +sm
         display: block
 .gsi1
     +md
@@ -1075,6 +1097,11 @@
 .get__girl
     +md
         margin-bottom: -15px
+        max-width: 150px
+        margin-left: auto
+        margin-right: auto
+    +xs
+        margin-bottom: 0
 .get__item
     position: relative
 .get__item-content

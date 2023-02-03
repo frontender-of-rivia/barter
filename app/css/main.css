@@ -1574,21 +1574,25 @@ ul li:first-child {
   @media (max-width: 991px) {
     .get__text {
       font-size: 14px;
-      margin-bottom: 40px; } }
+      margin-bottom: 70px; } }
   @media (max-width: 720px) {
     .get__text {
-      margin-bottom: 30px; } }
+      margin-bottom: 90px; } }
+  @media (max-width: 500px) {
+    .get__text {
+      max-width: 335px;
+      margin-bottom: 55px; } }
 
 .get__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 160px;
   padding-right: 152px;
   position: relative; }
   @media (max-width: 1260px) {
     .get__wrapper {
       padding: 0;
-      padding-left: 110px; } }
+      padding-left: 130px; } }
   @media (max-width: 991px) {
     .get__wrapper {
       flex-direction: column;
@@ -1602,10 +1606,17 @@ ul li:first-child {
     .get__shadows {
       left: 50%;
       margin-left: -281px;
-      top: 0; } }
+      top: -40px; } }
   @media (max-width: 720px) {
     .get__shadows {
-      margin-left: -220px; } }
+      margin-left: -190px;
+      top: -90px; } }
+  @media (max-width: 500px) {
+    .get__shadows {
+      left: 50%;
+      margin-left: -200px;
+      width: 462px;
+      top: -70px; } }
 
 .get__blues {
   position: absolute;
@@ -1618,11 +1629,19 @@ ul li:first-child {
   @media (max-width: 991px) {
     .get__blues {
       position: static;
-      margin-left: 0;
-      margin-bottom: 26px; } }
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 26px;
+      max-width: 220px; } }
+  @media (max-width: 720px) {
+    .get__blues img {
+      width: 230px; } }
 
 .get__left {
-  padding-top: 102px; }
+  padding-top: 120px; }
+  @media (max-width: 1260px) {
+    .get__left {
+      padding-top: 97px; } }
   @media (max-width: 991px) {
     .get__left {
       text-align: center;
@@ -1631,9 +1650,18 @@ ul li:first-child {
 .get__item-img {
   text-align: center; }
 
-.gsi2 {
+.gsi1-5 {
   display: none; }
   @media (max-width: 991px) {
+    .gsi1-5 {
+      display: block; } }
+  @media (max-width: 720px) {
+    .gsi1-5 {
+      display: none; } }
+
+.gsi2 {
+  display: none; }
+  @media (max-width: 720px) {
     .gsi2 {
       display: block; } }
 
@@ -1643,7 +1671,14 @@ ul li:first-child {
 
 @media (max-width: 991px) {
   .get__girl {
-    margin-bottom: -15px; } }
+    margin-bottom: -15px;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 500px) {
+  .get__girl {
+    margin-bottom: 0; } }
 
 .get__item {
   position: relative; }
