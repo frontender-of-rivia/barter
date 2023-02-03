@@ -498,17 +498,19 @@
         padding-bottom: 60px
         border-bottom-left-radius: 50px
         border-bottom-right-radius: 50px
+    +xs
+        padding-bottom: 40px
     .container
         +lg
             width: 100%
             margin: 0 auto
-        +md
-            padding-left: 22px
         +xs
-            padding-left: 20px
-            padding-right: 20px
+            padding-left: 6px
+            padding-right: 6px
     .simplebar-content-wrapper
         padding-right: 0 !important
+    .simplebar-track
+        margin-left: 20px
 .fift__text
     text-align: center
     margin-bottom: 40px
@@ -563,13 +565,19 @@
         justify-content: center
         gap: 0
     +md
-        grid-template-columns: 246px 246px 246px
-        gap: 90px
+        grid-template-columns: 246px 246px 246px 1px
+        gap: 80px
         justify-content: flex-start
     +xs
-        grid-template-columns: 232px
+        grid-template-columns: 250px
         justify-content: center
-        gap: 35px
+        gap: 50px
+        padding-bottom: 10px
+    .fift__item:first-child
+        +md
+            margin-left: 20px !important
+        +xs
+            margin-left: 0 !important
 .fift__item
     text-align: center
     height: 549px
@@ -590,6 +598,21 @@
         width: 250px
     +xs
         height: 452px
+    .fift__item-stories
+        position: absolute
+        bottom: 40%
+        left: 50%
+        min-width: 320px
+        margin-left: -160px
+        border-radius: 0
+        +lg
+            bottom: 44%
+        +md
+            min-width: 300px
+            margin-left: -150px
+        +xs
+            min-width: 268px
+            margin-left: -134px
 .fift__box
     .fift__item:first-child
         margin-left: 0
@@ -621,6 +644,8 @@
         font-size: 21px
         width: 236px
         margin-left: -118px
+    +xs
+        bottom: -10px
     span
         display: block
         font-weight: 700
@@ -665,7 +690,8 @@
         top: 130px
         border-radius: 25px
     +xs
-        left: -17px
+        left: -12px
+        width: 274px
         top: 126px
 .fift__item-title
     font-weight: 500
@@ -691,6 +717,14 @@
     color: #1D202C
     font-weight: 500
     font-size: 11px
+.fift__spacer
+    display: none
+    +md
+        display: block
+        min-width: 1px
+        height: 20px
+    +xs
+        display: none
 /* can */
 .can
     background: #1D202C
