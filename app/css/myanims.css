@@ -88,15 +88,12 @@
     animation-fill-mode: forwards;
 }
 @keyframes tumblrAnim1 {
-    0% { background: #6A6A6A; }
-    70% { background: #B9FF66; }
-    80% { transform: scale(1.1); }
-    90% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+    0% { background: #fff; }
+    100% { background: #B9FF66; }
 }
 @keyframes tumblrAnim2 {
-    from { transform: translateX(0) }
-    to { transform: translateX(30px) }
+    0% { transform: translateX(0); background: #1D202C; }
+    100% { transform: translateX(30px); background: #fff; }
 }
 
 
