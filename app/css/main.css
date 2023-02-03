@@ -1380,26 +1380,30 @@ ul li:first-child {
   overflow: hidden;
   position: relative;
   background: url(../img/choise-bg1.png) no-repeat center bottom, #1D202C;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
   border-bottom-right-radius: 100px;
   border-bottom-left-radius: 100px; }
   @media (max-width: 1260px) {
     .choise {
-      background-position: center 150px;
+      background-position: center -30px;
       border-bottom-right-radius: 70px;
       border-bottom-left-radius: 70px; } }
   @media (max-width: 991px) {
     .choise {
       background-image: url(../img/choise-bg2.png);
       background-color: #1D202C;
-      background-position: center bottom;
+      background-position: center 110px;
       border-bottom-right-radius: 50px;
       border-bottom-left-radius: 50px; } }
+  @media (max-width: 720px) {
+    .choise {
+      background-position: center 110px; } }
   @media (max-width: 500px) {
     .choise {
       padding-bottom: 40px;
       border-bottom-right-radius: 40px;
-      border-bottom-left-radius: 40px; } }
+      border-bottom-left-radius: 40px;
+      background-position: center 160px; } }
 
 .choise__title {
   color: #fff;
@@ -1439,18 +1443,15 @@ ul li:first-child {
   color: #A2A9B4;
   font-size: 18px;
   line-height: 140%;
-  margin-bottom: 724px;
+  margin-bottom: 415px;
   text-align: center; }
-  @media (max-width: 1260px) {
-    .choise__text {
-      margin-bottom: 660px; } }
   @media (max-width: 991px) {
     .choise__text {
       font-size: 14px;
-      margin-bottom: 400px; } }
-  @media (max-width: 500px) {
+      margin-bottom: 340px; } }
+  @media (max-width: 720px) {
     .choise__text {
-      margin-bottom: 420px; } }
+      margin-bottom: 340px; } }
 
 .choise__btn {
   display: inline-block;
@@ -1483,13 +1484,13 @@ ul li:first-child {
   width: 768px;
   margin-left: -393px;
   display: grid;
-  grid-template-columns: 388px 348px;
+  grid-template-columns: 246px 246px;
   justify-content: center;
   align-items: flex-end;
   bottom: 0; }
   @media (max-width: 991px) {
     .choise__phones {
-      grid-template-columns: 248px 222px;
+      grid-template-columns: 208px 190px;
       bottom: -30px; } }
   @media (max-width: 720px) {
     .choise__phones {

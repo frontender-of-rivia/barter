@@ -852,23 +852,26 @@
     overflow: hidden
     position: relative
     background: url(../img/choise-bg1.png) no-repeat center bottom, #1D202C
-    padding-bottom: 60px
+    padding-bottom: 35px
     border-bottom-right-radius: 100px
     border-bottom-left-radius: 100px
     +lg
-        background-position: center 150px
+        background-position: center -30px
         border-bottom-right-radius: 70px
         border-bottom-left-radius: 70px
     +md
         background-image: url(../img/choise-bg2.png)
         background-color: #1D202C
-        background-position: center bottom
+        background-position: center 110px
         border-bottom-right-radius: 50px
         border-bottom-left-radius: 50px
+    +sm
+        background-position: center 110px
     +xs
         padding-bottom: 40px
         border-bottom-right-radius: 40px
         border-bottom-left-radius: 40px
+        background-position: center 160px
 .choise__title
     color: #fff
     margin-bottom: 15px
@@ -904,15 +907,13 @@
     color: #A2A9B4
     font-size: 18px
     line-height: 140%
-    margin-bottom: 724px
+    margin-bottom: 415px
     text-align: center
-    +lg
-        margin-bottom: 660px
     +md
         font-size: 14px
-        margin-bottom: 400px
-    +xs
-        margin-bottom: 420px
+        margin-bottom: 340px
+    +sm
+        margin-bottom: 340px
 .choise__btn
     display: inline-block
     padding: 19px 67px 19px 23px
@@ -940,12 +941,12 @@
     width: 768px
     margin-left: -393px
     display: grid
-    grid-template-columns: 388px 348px
+    grid-template-columns: 246px 246px
     justify-content: center
     align-items: flex-end
     bottom: 0
     +md
-        grid-template-columns: 248px 222px
+        grid-template-columns: 208px 190px
         bottom: -30px
     +sm
         grid-template-columns: 198px 192px
