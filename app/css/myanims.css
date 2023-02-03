@@ -54,7 +54,7 @@
     }
 }
 /* main__phones  */
-.main__phones { animation-name: moveFromBottom; animation-duration: 1s; }
+.main__phones, .choise__phones img { animation-name: moveFromBottom; animation-duration: 1s; }
 @keyframes moveFromBottom {
     from { transform: translateY(800px) }
 }

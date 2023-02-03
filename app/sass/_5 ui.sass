@@ -136,6 +136,10 @@
         border-top-right-radius: 10px
         border-bottom-right-radius: 10px
         overflow: hidden
+        +xs
+            font-size: 15px
+            width: 45px
+            height: 42px
         &:after
             content: ''
             position: absolute
@@ -144,6 +148,9 @@
             border: 20px solid transparent
             border-left: 1px solid #B9FF66
             border-top: 55px solid #B9FF66
+            +xs
+                border-top: 70px solid #B9FF66
+                left: -10px
     span
         position: relative
         z-index: 9
