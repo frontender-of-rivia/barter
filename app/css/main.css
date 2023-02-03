@@ -1349,6 +1349,23 @@ ul li:first-child {
   .choise__title span {
     font-weight: 700; }
 
+.choise__title-tmblr {
+  display: inline-flex;
+  width: 76px;
+  height: 41px;
+  align-items: center;
+  padding: 7px;
+  background: #B9FF66;
+  border-radius: 50px;
+  position: relative;
+  align-items: flex-start; }
+  .choise__title-tmblr span {
+    width: 27px;
+    height: 27px;
+    background: #fff;
+    border-radius: 50px;
+    display: inline-block; }
+
 .choise__text {
   color: #A2A9B4;
   font-size: 18px;

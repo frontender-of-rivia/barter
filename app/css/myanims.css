@@ -75,8 +75,29 @@
     from { transform: translateX(800px) }
     to { transform: translateX(0) }
 }
-
-
+/* tumblrAnim1 */
+/* tumblrAnim2 */
+.choise__title-tmblr{
+    animation-name: tumblrAnim1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.choise__title-tmblr span {
+    animation-name: tumblrAnim2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes tumblrAnim1 {
+    0% { background: #6A6A6A; }
+    70% { background: #B9FF66; }
+    80% { transform: scale(1.1); }
+    90% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+@keyframes tumblrAnim2 {
+    from { transform: translateX(0) }
+    to { transform: translateX(30px) }
+}
 
 
 /* leFadeInLeft */
