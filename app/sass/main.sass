@@ -400,7 +400,9 @@
             width: 95%
         +xs
             width: 100%
-            padding-left: 20px
+    .simplebar-track
+        +xs
+            margin-left: 20px
 .adv__item
     background: #F5F8FA
     border-radius: 15px
@@ -428,6 +430,12 @@
 .adv__box
     display: flex
     gap: 15px
+    .adv__item:first-child
+        +xs
+            margin-left: 20px
+    .adv__item:last-child
+        +xs
+            margin-right: 20px
 .adv__box-wrap
     padding-bottom: 30px
     padding-top: 20px
@@ -468,6 +476,12 @@
         left: 15px
         top: -7px
         border-radius: 3px
+.adv__spacer
+    display: none
+    +xs
+        display: block
+        min-width: 20px
+        height: 100px
 /* fift */
 .fift
     padding-bottom: 80px
