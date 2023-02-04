@@ -1861,7 +1861,9 @@ ul li:first-child {
       font-size: 14px; } }
 
 .track__img {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
   @media (max-width: 1260px) {
     .track__img img {
       width: 750px; } }
@@ -1870,6 +1872,14 @@ ul li:first-child {
       width: auto;
       margin-left: auto;
       margin-right: auto; } }
+
+.tp1 {
+  width: 45%;
+  height: auto; }
+
+.tp2 {
+  width: 45%;
+  height: auto; }
 
 .track__title span {
   font-weight: 700; }

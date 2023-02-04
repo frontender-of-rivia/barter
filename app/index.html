@@ -215,7 +215,7 @@
 					За что клиенты <br><span>любят <img src="img/love_title_icon.svg"> BARTER?</span>
 				</h2>
 			</div>
-			<div class="love__table wow animate__animated animate__fadeInDown">
+			<div class="love__table">
 				<div class="love__table-row love__table-row--top">
 					<div class="love__table-col">
 						
@@ -442,7 +442,7 @@
 			</h3>
 			<div class="can__title-wrap title-wrap">
 				<h2 class="can__title title">
-					Управлять <img src="img/can_title_icon.svg" class="wow animate__animated animate__backInLeft"> <br> подачей <span class="wow animate__animated animate__backInLeft">@блогера</span>
+					Управлять <img src="img/can_title_icon.svg" class="wow animate__animated animate__backInLeft"> <br> подачей <span class="">@блогера</span>
 				</h2>
 			</div>
 			<div class="can__top-text">
@@ -696,8 +696,10 @@
 			<div class="track__text wow leFadeInBottom">
 				Прозрачная статистика: от количества интеграций, до клиентов с акции
 			</div>
-			<div class="track__img animate__zoomInUp wow animate__animated">
-				<img src="img/track-img1.png" class="ti1">
+			<div class="track__img">
+				<!-- <img src="img/track-img1.png" class="ti1"> -->
+				<img src="img/track-phone1.png" class="tp1">
+				<img src="img/track-phone2.png" class="tp2">
 				<img src="img/track-img2.png" class="ti2">
 			</div>
 		</div>
@@ -1277,7 +1279,8 @@
 	<!-- Базовые скрипты javascript -->
 	<script src="js/main.js"></script>
 	<script>
-		new WOW().init();
+		wow = new WOW();
+		wow.init();
 	</script>
 </body>
 

@@ -186,3 +186,13 @@
     }
     50% { transform: scale(.5, .5) }
 }
+/**/
+/**/
+.moveToBottom { animation-name: moveToBottom; animation-duration: 2s; animation-iteration-count: infinite; }
+@keyframes moveToBottom {
+    to { transform: translateY(800px) }
+}
+.moveToRight { animation-name: moveToRight; animation-duration: 1s; animation-iteration-count: infinite; }
+@keyframes moveToRight {
+    to { transform: translateX(800px) }
+}
