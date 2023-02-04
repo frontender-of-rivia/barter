@@ -223,3 +223,19 @@
 @keyframes moveToRight {
     to { transform: translateX(800px) }
 }
+/**/
+/**/
+/**/
+/**/
+@keyframes clockwise {
+    to {transform: rotate(360deg) translatez(0);}
+}
+.one {
+  height: 15px;
+  width:  15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: transparent transparent transparent hsla(0, 0%, 100%, 0.50);
+  border-radius: 100%;
+  animation: clockwise 1.5s linear infinite; 
+}

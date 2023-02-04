@@ -2361,10 +2361,10 @@ ul li:first-child {
 .numbers__bottom {
   text-align: center;
   color: #A2A9B4;
-  margin-top: 20px; }
-  .numbers__bottom img {
-    vertical-align: middle;
-    margin-right: 10px; }
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px; }
 
 /* comments */
 .comments {
