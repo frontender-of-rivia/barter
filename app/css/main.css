@@ -3275,8 +3275,8 @@ ul li:first-child {
   flex-direction: column;
   gap: 10px;
   border-radius: 100px;
-  width: 192px;
-  height: 192px;
+  width: 130px;
+  height: 130px;
   z-index: 1000;
   transition: 0.1s ease;
   cursor: pointer;
@@ -3284,10 +3284,6 @@ ul li:first-child {
   box-shadow: 0 43px 85px -21px rgba(185, 255, 102, 0.3); }
   .createfixed:hover {
     background: #9FE051; }
-  @media (max-width: 1260px) {
-    .createfixed {
-      width: 150px;
-      height: 150px; } }
   @media (max-width: 991px) {
     .createfixed {
       right: 20px;
@@ -3307,10 +3303,10 @@ ul li:first-child {
 .createfixed__name {
   color: #1D202C;
   line-height: 140%;
-  font-size: 25px; }
+  font-size: 18px; }
   @media (max-width: 1260px) {
     .createfixed__name {
-      font-size: 20px;
+      font-size: 15px;
       line-height: 120%; } }
   @media (max-width: 720px) {
     .createfixed__name {
