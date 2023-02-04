@@ -526,7 +526,8 @@ ul li:first-child {
 .main__phones {
   position: absolute;
   right: 75px;
-  bottom: -180px; }
+  bottom: -180px;
+  width: 475px; }
   @media (max-width: 1260px) {
     .main__phones {
       width: 400px; } }
@@ -898,8 +899,7 @@ ul li:first-child {
 .adv__item-img {
   text-align: center;
   position: relative;
-  z-index: 9;
-  top: -20px; }
+  z-index: 9; }
 
 .adv__item-stap {
   font-size: 62px;

@@ -122,6 +122,12 @@
     }
     to { transform: perspective(600px) rotateX(-360deg) }
 }
+/* lefadein */
+.leFadeIn { animation-name: leFadeIn; animation-duration: 1s; }
+@keyframes leFadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
 /* leFadeInLeft */
 .leFadeInLeft {
     animation-name: leFadeInLeft;
