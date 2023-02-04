@@ -91,12 +91,12 @@
 /* tumblrAnim2 */
 .choise__title-tmblr{
     animation-name: tumblrAnim1;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-fill-mode: forwards;
 }
 .choise__title-tmblr span {
     animation-name: tumblrAnim2;
-    animation-duration: 1.5s;
+    animation-duration: 1.2s;
     animation-fill-mode: forwards;
 }
 @keyframes tumblrAnim1 {

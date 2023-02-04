@@ -1432,16 +1432,18 @@ ul li:first-child {
   height: 41px;
   align-items: center;
   padding: 7px;
-  background: #B9FF66;
+  background: #7F7F7F;
   border-radius: 50px;
   position: relative;
-  align-items: flex-start; }
+  align-items: flex-start;
+  visibility: visible !important; }
   .choise__title-tmblr span {
     width: 27px;
     height: 27px;
     background: #fff;
     border-radius: 50px;
-    display: inline-block; }
+    display: inline-block;
+    visibility: visible !important; }
 
 .choise__text {
   color: #A2A9B4;
