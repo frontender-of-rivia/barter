@@ -2724,9 +2724,13 @@ ul li:first-child {
       font-size: 16px; } }
 
 .qa__item-content {
-  width: 0;
-  height: 0;
-  overflow: hidden; }
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+  padding-right: 70px; }
   .qa__item-content p {
     color: #A2A9B4;
     font-size: 16px;
@@ -2754,24 +2758,16 @@ ul li:first-child {
   .qa__item--open .qa__item-content {
     width: auto;
     height: auto;
-    overflow: visible; }
+    overflow: visible;
+    opacity: 1; }
 
 .qa__item-status {
   font-size: 30px;
-  color: #A2A9B4; }
+  color: #A2A9B4;
+  transition: 0.2s ease; }
   @media (max-width: 991px) {
     .qa__item-status {
       font-size: 22px; } }
-
-.qis2 {
-  display: none; }
-
-.qa__item--open .qis2 {
-  display: block;
-  color: #0042FF; }
-
-.qa__item--open .qis1 {
-  display: none; }
 
 /* footer */
 .footer {

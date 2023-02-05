@@ -46,16 +46,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		},
 	});
 	// spoilers
-	let qaItems = document.querySelectorAll('.qa__item');
-	for(let i = 0; i<qaItems.length; i++){
-		qaItems[i].onclick = function(){
-			if(this.classList.contains('qa__item--open')){
-				this.classList.remove('qa__item--open');
+	const accordions = document.querySelectorAll('.qa__item');
+	accordions.forEach(el => {
+		el.addEventListener('click', (e) => {
+			const self = e.currentTarget;
+			const content = self.querySelector('.qa__item-content');
+			const icon = self.querySelector('.qa__item-status');
+
+			self.classList.toggle('qa__item--open');
+
+			// если открыт аккордеон
+			if (self.classList.contains('qa__item--open')) {
+				content.setAttribute('aria-hidden', false);
+				content.style.maxHeight = content.scrollHeight + 'px';
+				icon.style.transform = 'rotate(45deg)';
+				icon.style.color = '#0042FF';
 			} else {
-				this.classList.add('qa__item--open');
+				content.setAttribute('aria-hidden', true);
+				content.style.maxHeight = null;
+				icon.style.transform = 'rotate(0)';
+				icon.style.color = '#A2A9B4';
 			}
-		}
-	}
+		});
+	});
 	// modals
 	const modals = document.querySelectorAll('[data-modal]');
 	modals.forEach(function (trigger) {
