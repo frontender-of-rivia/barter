@@ -917,6 +917,9 @@ ul li:first-child {
           background: #0042FF; } }
     .adv__item:hover .adv__item-top {
       border-color: #A6EE51; }
+      @media (max-width: 991px) {
+        .adv__item:hover .adv__item-top {
+          border-bottom: none; } }
   @media (max-width: 500px) {
     .adv__item:nth-child(2) {
       background: #BDFF6E; } }
@@ -950,7 +953,8 @@ ul li:first-child {
 .adv__item-img {
   text-align: center;
   position: relative;
-  z-index: 9; }
+  z-index: 9;
+  top: -20px; }
 
 .adv__item-stap {
   font-size: 62px;
@@ -1309,7 +1313,7 @@ ul li:first-child {
 .can__title {
   color: #fff;
   margin-bottom: 15px;
-  font-weight: 700; }
+  font-weight: 400; }
   @media (max-width: 991px) {
     .can__title {
       line-height: 150%; } }
@@ -1340,6 +1344,10 @@ ul li:first-child {
     @media (max-width: 720px) {
       .can__title img {
         max-width: 50px; } }
+
+.can__title-first {
+  font-weight: 700;
+  font-family: 'NeueMachina'; }
 
 .can__top-text {
   color: #A2A9B4;
