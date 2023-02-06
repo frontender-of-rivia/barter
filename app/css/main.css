@@ -527,15 +527,19 @@ ul li:first-child {
   position: absolute;
   right: 75px;
   bottom: -180px;
-  width: 475px; }
+  width: 475px;
+  display: flex; }
   @media (max-width: 1260px) {
     .main__phones {
-      width: 400px; } }
+      width: 280px;
+      right: 175px; } }
   @media (max-width: 991px) {
     .main__phones {
-      width: 335px;
+      width: auto;
       right: 0;
-      top: 65px; } }
+      top: 65px;
+      display: block;
+      width: 250px; } }
   @media (max-width: 720px) {
     .main__phones {
       width: 250px;
@@ -551,7 +555,7 @@ ul li:first-child {
   .main__phones img {
     position: relative;
     z-index: 9; }
-  .main__phones:after {
+  .main__phones .main__phones-green {
     content: '';
     position: absolute;
     width: 80px;
@@ -561,10 +565,10 @@ ul li:first-child {
     right: -40px;
     border-radius: 0 0 12px 0; }
     @media (max-width: 1260px) {
-      .main__phones:after {
+      .main__phones .main__phones-green {
         right: -40px; } }
     @media (max-width: 991px) {
-      .main__phones:after {
+      .main__phones .main__phones-green {
         top: 210px; } }
 
 .main__mouse {
@@ -587,6 +591,42 @@ ul li:first-child {
     font-size: 20px; }
   .main__mouse:hover {
     background: #B9FF66; }
+
+.main__phone1 {
+  position: absolute;
+  left: 5px;
+  top: -95px; }
+  @media (max-width: 991px) {
+    .main__phone1 {
+      left: -95px;
+      top: -5px; } }
+  @media (max-width: 720px) {
+    .main__phone1 {
+      width: 160px;
+      left: 15px;
+      top: -5px; } }
+  @media (max-width: 500px) {
+    .main__phone1 {
+      width: 230px; } }
+
+.main__phone2 {
+  position: absolute;
+  right: 170px;
+  top: -25px; }
+  @media (max-width: 991px) {
+    .main__phone2 {
+      right: -40px;
+      top: -405px; } }
+  @media (max-width: 720px) {
+    .main__phone2 {
+      width: 170px;
+      right: -80px;
+      top: -260px; } }
+  @media (max-width: 500px) {
+    .main__phone2 {
+      width: 240px;
+      right: -110px;
+      top: -380px; } }
 
 .main__video-icon {
   position: absolute;

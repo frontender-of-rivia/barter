@@ -143,12 +143,16 @@
     right: 75px
     bottom: -180px
     width: 475px
+    display: flex
     +lg
-        width: 400px
+        width: 280px
+        right: 175px
     +md
-        width: 335px
+        width: auto
         right: 0
         top: 65px
+        display: block
+        width: 250px
     +sm
         width: 250px
         top: 315px
@@ -162,7 +166,7 @@
     img
         position: relative
         z-index: 9
-    &:after
+    .main__phones-green
         content: ''
         position: absolute
         width: 80px
@@ -195,6 +199,34 @@
         font-size: 20px
     &:hover
         background: #B9FF66
+.main__phone1
+    position: absolute
+    left: 5px
+    top: -95px
+    +md
+        left: -95px
+        top: -5px
+    +sm
+        width: 160px
+        left: 15px
+        top: -5px
+    +xs
+        width: 230px
+.main__phone2
+    position: absolute
+    right: 170px
+    top: -25px
+    +md
+        right: -40px
+        top: -405px
+    +sm
+        width: 170px
+        right: -80px    
+        top: -260px
+    +xs
+        width: 240px
+        right: -110px
+        top: -380px
 // main icons
 .main__video-icon
     position: absolute
