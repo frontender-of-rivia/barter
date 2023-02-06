@@ -86,35 +86,35 @@ ul li:first-child {
 
 @font-face {
   font-family: 'NeueMachina';
-  src: url("../fonts/NeueMachina-Bold.woff2");
+  src: url("fonts/NeueMachina-Bold.woff2");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'NeueMachina';
-  src: url("../fonts/NeueMachina-Regular.woff2");
+  src: url("fonts/NeueMachina-Regular.woff2");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'TTFirsNeue';
-  src: url("../fonts/TTFirsNeue-Medium.woff2");
+  src: url("fonts/TTFirsNeue-Medium.woff2");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'TTFirsNeue';
-  src: url("../fonts/TTFirsNeue-Regular.woff2");
+  src: url("fonts/TTFirsNeue-Regular.woff2");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Akshar';
-  src: url("../fonts/Akshar-Light.woff2");
+  src: url("fonts/Akshar-Light.woff2");
   font-style: normal;
   font-weight: 400;
 }
@@ -382,11 +382,11 @@ ul li:first-child {
 }
 
 .input--name {
-  background-image: url(../img/input-persons.svg);
+  background-image: url(img/input-persons.svg);
 }
 
 .input--phone {
-  background-image: url(../img/input-phone.svg);
+  background-image: url(img/input-phone.svg);
 }
 
 .simplebar-track.simplebar-vertical {
@@ -537,7 +537,7 @@ ul li:first-child {
 
 .main {
   height: 590px;
-  background: url(../img/main-bg.jpg) no-repeat center bottom/cover;
+  background: url(img/main-bg.jpg) no-repeat center bottom/cover;
   padding-top: 28px;
   position: relative;
   overflow: hidden;
@@ -915,7 +915,7 @@ ul li:first-child {
   .main {
     height: 590px;
     border-radius: 0 0 50px 50px;
-    background: url(../img/main-bg2.jpg) no-repeat center bottom/cover;
+    background: url(img/main-bg2.jpg) no-repeat center bottom/cover;
   }
 
   .main__stamp {
@@ -1119,7 +1119,7 @@ ul li:first-child {
   .main {
     height: 1037px;
     border-radius: 0 0 40px 40px;
-    background: url(../img/main-bg3.jpg) no-repeat center bottom/cover;
+    background: url(img/main-bg3.jpg) no-repeat center bottom/cover;
   }
 
   .main__title {
