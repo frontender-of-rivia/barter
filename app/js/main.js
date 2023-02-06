@@ -91,9 +91,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// preloader
 	function loadData() {
 		return new Promise((resolve, reject) => {
-		  // setTimeout не является частью решения
-		  // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
-		  setTimeout(resolve, 2000);
+			//
+		  	setTimeout(resolve, 1000);
 		})
 	  }
 	  
