@@ -1322,7 +1322,8 @@ ul li:first-child {
       line-height: 180%; } }
   @media (max-width: 500px) {
     .can__title {
-      line-height: 150%; } }
+      line-height: 170%;
+      font-size: 25px; } }
   .can__title span {
     background: #B9FF66;
     border-radius: 50px;
@@ -2715,30 +2716,6 @@ ul li:first-child {
       max-width: 110px;
       right: -81px;
       top: 10px; } }
-
-/* runline */
-.runline {
-  text-align: center;
-  position: relative;
-  height: 177px;
-  background-size: cover; }
-  @media (max-width: 1260px) {
-    .runline {
-      height: 140px; } }
-  @media (max-width: 991px) {
-    .runline {
-      height: 100px; }
-      .runline img {
-        height: 200px;
-        width: auto;
-        max-width: 1000%; } }
-
-.viewport, .viewport--reverse {
-  height: 50%;
-  background-size: cover; }
-
-.viewport--reverse {
-  height: 50%; }
 
 /* qa */
 .qa {

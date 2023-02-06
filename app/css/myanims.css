@@ -109,30 +109,6 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(30px); }
 }
-.viewport {
-    background-image: url("../img/runline1.svg");
-    animation: 14s runline1 infinite linear;
-}
-.viewport--reverse {
-    background-image: url("../img/runline2.svg");
-    animation: 14s runline2 infinite linear;
-}
-@keyframes runline1 {
-    from {
-       background-position: 0 0;
-    }
-    to {
-       background-position: -2813px 0;
-    }
-}
-@keyframes runline2 {
-    from {
-       background-position: 0 0;
-    }
-    to {
-       background-position: 2813px 0;
-    }
-}
 /* pullRelease */
 .pullRelease { animation-name: pullRelease; animation-duration: 0.5s; }
 @keyframes pullRelease {

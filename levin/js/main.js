@@ -47,14 +47,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
     Fancybox.bind("[data-fancybox]", {
         placeFocusBack: false
     });
-    //
+    // fixed top
     jQuery(function($) {
         $(window).scroll(function(){
             if($(this).scrollTop()>140){
+                $('.nd-hcenter__logo').addClass('nd-hcenter__logo--fixed');
+                $('.nd-hcenter').addClass('nd-hcenter--fixed');
+                $('.nd-hcenter__phone').addClass('nd-hcenter__phone--fixed');
+                $('.nd-hcenter__search').addClass('nd-hcenter__search--fixed');
+                $('.nd-hbottom__title').addClass('nd-hbottom__title--fixed');
                 $('.nd-header').addClass('nd-header--fixed');
+                $('.nd-menu').addClass('nd-menu--fixed');
             }
             else if ($(this).scrollTop()<140){
+                $('.nd-hcenter__logo').removeClass('nd-hcenter__logo--fixed');
+                $('.nd-hcenter').removeClass('nd-hcenter--fixed');
+                $('.nd-hcenter__phone').removeClass('nd-hcenter__phone--fixed');
+                $('.nd-hcenter__search').removeClass('nd-hcenter__search--fixed');
+                $('.nd-hbottom__title').removeClass('nd-hbottom__title--fixed');
                 $('.nd-header').removeClass('nd-header--fixed');
+                $('.nd-menu').removeClass('nd-menu--fixed');
             }
         });
     });
