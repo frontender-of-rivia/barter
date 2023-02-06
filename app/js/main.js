@@ -95,9 +95,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// 	document.querySelector('.main__phone2').classList.add('moveFromBottom');
 	// }
 
-	window.addEventListener("DOMContentLoaded", function() {
+	
+	function myOnLoad(){
 		document.querySelector('#preloader').style.display = 'none';
 		document.querySelector('.main__phone1').classList.add('moveFromBottom');
 		document.querySelector('.main__phone2').classList.add('moveFromBottom');
-	});
+	}
+
+	document.addEventListener("load", myOnLoad());
 });

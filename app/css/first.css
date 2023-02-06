@@ -186,7 +186,7 @@ ul li:first-child {
 /* main */
 .main {
   height: 590px;
-  background: url(img/main-bg.jpg) no-repeat center bottom/cover;
+  background: url(../img/main-bg.jpg) no-repeat center bottom/cover;
   padding-top: 28px;
   position: relative;
   overflow: hidden;
