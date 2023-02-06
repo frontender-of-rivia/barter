@@ -88,19 +88,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	document.querySelector('.can__item-circle').classList.add('magictime', 'fadeIn');
 
-	// preloader
-	// window.DOMContentLoaded = function () {
-	// 	document.querySelector('#preloader').style.display = 'none';
-	// 	document.querySelector('.main__phone1').classList.add('moveFromBottom');
-	// 	document.querySelector('.main__phone2').classList.add('moveFromBottom');
-	// }
-
-	
-	function myOnLoad(){
-		document.querySelector('#preloader').style.display = 'none';
-		document.querySelector('.main__phone1').classList.add('moveFromBottom');
-		document.querySelector('.main__phone2').classList.add('moveFromBottom');
-	}
-
-	document.addEventListener("load", myOnLoad());
+	document.querySelector('#preloader').style.display = 'none';
+	document.querySelector('.main__phone1').classList.add('moveFromBottom');
+	document.querySelector('.main__phone2').classList.add('moveFromBottom');
 });
+
+// document.addEventListener("load", () => {
+// 	document.querySelector('#preloader').style.display = 'none';
+// 	document.querySelector('.main__phone1').classList.add('moveFromBottom');
+// 	document.querySelector('.main__phone2').classList.add('moveFromBottom');
+// });
