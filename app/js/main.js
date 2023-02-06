@@ -89,16 +89,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	document.querySelector('.can__item-circle').classList.add('magictime', 'fadeIn');
 
 	// preloader
-	function loadData() {
-		return new Promise((resolve, reject) => {
-			document.addEventListener("load", resolve());
-		})
-	  }
-	  
-	  loadData()
-		.then(() => {
-		  let preloaderEl = document.getElementById('preloader');
-		  preloaderEl.classList.add('hidden');
-		  preloaderEl.classList.remove('visible');
-	});
+	window.onload = function () {
+		document.querySelector('#preloader').style.display = 'none';
+	}
 });
