@@ -556,20 +556,29 @@ ul li:first-child {
     position: relative;
     z-index: 9; }
   .main__phones .main__phones-green {
-    content: '';
     position: absolute;
     width: 80px;
     height: 50px;
     background: #B9FF66;
     top: 290px;
     right: -40px;
-    border-radius: 0 0 12px 0; }
+    border-radius: 0 0 12px 0;
+    animation-name: greenMainLine;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0; }
     @media (max-width: 1260px) {
       .main__phones .main__phones-green {
-        right: -40px; } }
+        right: -140px;
+        top: 200px; } }
     @media (max-width: 991px) {
       .main__phones .main__phones-green {
-        top: 210px; } }
+        top: 240px;
+        right: -40px; } }
+    @media (max-width: 720px) {
+      .main__phones .main__phones-green {
+        top: 190px; } }
 
 .main__mouse {
   width: 94px;
@@ -599,7 +608,8 @@ ul li:first-child {
   @media (max-width: 991px) {
     .main__phone1 {
       left: -95px;
-      top: -5px; } }
+      top: -5px;
+      width: 240px; } }
   @media (max-width: 720px) {
     .main__phone1 {
       width: 160px;
@@ -615,8 +625,9 @@ ul li:first-child {
   top: -25px; }
   @media (max-width: 991px) {
     .main__phone2 {
-      right: -40px;
-      top: -405px; } }
+      right: -20px;
+      top: -385px;
+      width: 240px; } }
   @media (max-width: 720px) {
     .main__phone2 {
       width: 170px;

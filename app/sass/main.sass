@@ -167,7 +167,6 @@
         position: relative
         z-index: 9
     .main__phones-green
-        content: ''
         position: absolute
         width: 80px
         height: 50px
@@ -175,10 +174,19 @@
         top: 290px
         right: -40px
         border-radius: 0 0 12px 0
+        animation-name: greenMainLine
+        animation-duration: 3s
+        animation-delay: 2s
+        animation-fill-mode: forwards
+        opacity: 0
         +lg
-            right: -40px
+            right: -140px
+            top: 200px
         +md
-            top: 210px
+            top: 240px
+            right: -40px
+        +sm
+            top: 190px
 .main__mouse
     width: 94px
     height: 54px
@@ -206,6 +214,7 @@
     +md
         left: -95px
         top: -5px
+        width: 240px
     +sm
         width: 160px
         left: 15px
@@ -217,8 +226,9 @@
     right: 170px
     top: -25px
     +md
-        right: -40px
-        top: -405px
+        right: -20px
+        top: -385px
+        width: 240px
     +sm
         width: 170px
         right: -80px    
