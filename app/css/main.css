@@ -2733,6 +2733,13 @@ ul li:first-child {
         width: auto;
         max-width: 1000%; } }
 
+.viewport, .viewport--reverse {
+  height: 50%;
+  background-size: cover; }
+
+.viewport--reverse {
+  height: 50%; }
+
 /* qa */
 .qa {
   padding-top: 120px;

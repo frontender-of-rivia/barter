@@ -1,4 +1,4 @@
-/* can__item-circle */
+/* CAN__ITEM-CIRCLE */
 .can__item-circle1 {
     animation-name: unrotate;
     animation-timing-function: ease-in-out;
@@ -110,18 +110,29 @@
     100% { transform: translateX(30px); }
 }
 .viewport {
-    background-image: url("../img/run-line4.png");
-    animation: 7s anim1 infinite linear;
-    animation-delay: 0s;
+    background-image: url("../img/runline1.svg");
+    animation: 14s runline1 infinite linear;
 }
-@keyframes anim1 {
+.viewport--reverse {
+    background-image: url("../img/runline2.svg");
+    animation: 14s runline2 infinite linear;
+}
+@keyframes runline1 {
     from {
        background-position: 0 0;
     }
     to {
        background-position: -2813px 0;
     }
- }
+}
+@keyframes runline2 {
+    from {
+       background-position: 0 0;
+    }
+    to {
+       background-position: 2813px 0;
+    }
+}
 /* pullRelease */
 .pullRelease { animation-name: pullRelease; animation-duration: 0.5s; }
 @keyframes pullRelease {
