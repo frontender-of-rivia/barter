@@ -357,13 +357,19 @@ ul li:first-child {
 /* preloader */
 #preloader {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 999999;
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fbfbfb url("//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif") no-repeat center center; }
+  background: #fff; }
+  #preloader img {
+    animation-name: rotate;
+    animation-duration: 6s; }
 
 .visible {
   visibility: visible;
