@@ -18,18 +18,39 @@
     height: 100%
     overflow: visible
     background: #fff
-    //background: #fbfbfb url('//cdnjs.cloudflare.com/ajax/libs/file-uploader/3.7.0/processing.gif') no-repeat center center
-    img
-        animation-name: rotate
-        animation-duration: 6s
 .visible
     visibility: visible
     opacity: 1
-    transition: opacity 2s linear
+    transition: opacity 0.1s linear
 .hidden
     visibility: hidden
     opacity: 0
-    transition: visibility 0s 2s, opacity 2s linear
+    transition: visibility 0s 0.1s, opacity 0.1s linear
+#preloader div
+  width: 8vmax
+  height: 8vmax
+  border-right: 4px solid #0042FF
+  border-radius: 100%
+  animation: spinRight 800ms linear infinite
+  &:before, &:after
+    content: ''
+    width: 6vmax
+    height: 6vmax
+    display: block
+    position: absolute
+    top: calc(50% - 3vmax)
+    left: calc(50% - 3vmax)
+    border-left: 3px solid #0042FF
+    border-radius: 100%
+    animation: spinLeft 800ms linear infinite
+  &:after 
+    width: 4vmax
+    height: 4vmax
+    top: calc(50% - 2vmax)
+    left: calc(50% - 2vmax)
+    border: 0
+    border-right: 2px solid #0042FF
+    animation: none
 /* header */
 .header
     display: flex
@@ -493,12 +514,6 @@
             border-color: #A6EE51
             +md
                 border-bottom: none
-    &:nth-child(2)
-        +xs
-            background: #BDFF6E
-        .adv__item-bottom-icon
-            +xs
-                background: #1D202C
 .adv__box
     display: flex
     gap: 15px

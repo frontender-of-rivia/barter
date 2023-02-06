@@ -91,8 +91,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// preloader
 	function loadData() {
 		return new Promise((resolve, reject) => {
-			//
-		  	setTimeout(resolve, 1000);
+			document.addEventListener("load", resolve());
 		})
 	  }
 	  
