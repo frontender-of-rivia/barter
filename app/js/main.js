@@ -87,9 +87,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
+// document.addEventListener("DOMContentLoaded", function(event) {
+// 	// preloader
+// 	document.querySelector('#preloader').style.display = 'none';
+// 	document.querySelector('.main__phone1').classList.add('moveFromBottom');
+// 	document.querySelector('.main__phone2').classList.add('moveFromBottom');
+// })
+
+window.onload = function() {
 	// preloader
 	document.querySelector('#preloader').style.display = 'none';
 	document.querySelector('.main__phone1').classList.add('moveFromBottom');
 	document.querySelector('.main__phone2').classList.add('moveFromBottom');
-})
+}
