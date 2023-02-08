@@ -200,6 +200,13 @@
   font-family: 'NeueMachina';
 }
 
+.fift__item-content img {
+  position: absolute;
+  left: 50%;
+  margin-left: -26px;
+  top: -26px;
+}
+
 .fift__item2-icon1 {
   position: absolute;
   left: -28px;
@@ -627,6 +634,10 @@
 
 .get__title-wrap {
   margin-bottom: 18px;
+}
+
+.get__title span {
+  font-weight: 700;
 }
 
 .get__text {
@@ -2857,6 +2868,13 @@
 
   .fift__item-content {
     bottom: -10px;
+  }
+
+  .fift__item-content img {
+    width: 44px;
+    height: 44px;
+    margin-left: -22px;
+    top: -22px;
   }
 
   .fift__item-wrapper {

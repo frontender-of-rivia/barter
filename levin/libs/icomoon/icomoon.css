@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right-top:before {
+  content: "\e90c";
+}
 .icon-cross:before {
   content: "\e90b";
 }

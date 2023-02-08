@@ -5,7 +5,7 @@
 @import "5 ui.sass"
 @import "6 modules.sass"
 body
-    padding-top: 150px
+    padding-top: 168px
     +md
         padding-top: 128px
     +sm
@@ -36,16 +36,45 @@ body
     +sm
         top: 56px !important
 .nd-menu--open.nd-menu--fixed
-    top: 55px !important
+    top: 148px !important
+    +sm
+        top: 56px !important
+        height: 85vh
+.nd-mbanner__title
+    font-size: 17px
+    font-weight: 700
+    color: $primary
+    margin-bottom: 10px
+    +xs
+        font-size: 13px
+.nd-mbanner__text
+    font-size: 13px
+    color: #474D63
+    margin-bottom: 22px
+    +xs
+        font-size: 11px
+        margin-bottom: 16px
+.nd-mbanner__btn
+    margin-bottom: 166px
+    padding: 15px
+    width: 100%
+    font-weight: 400
+    +xs
+        font-size: 13px
+    i
+        font-size: 10px
+        margin-left: 7px
 /* ND-HEADER */
 .nd-header--fixed
     top: 0
     left: 0
+    box-shadow: 0 4px 13px 0 rgba(0,0,0,0.07)
 .nd-header
     background: #fff
     width: 100%
     transition: 0.2s ease
     position: fixed
+    z-index: 1000
     left: 0
     top: 0
     +sm
@@ -93,6 +122,8 @@ body
         font-size: 10px
         color: #52617E
         margin-bottom: 3px
+        position: relative
+        top: 2px
 .nd-htop__sublist
     display: block
 .nd-htop__subpoint
@@ -123,36 +154,52 @@ body
 // nd-htop__right
 .nd-htop__right
     display: flex
-    gap: 22px
+    align-items: center
+    height: 100%
+    gap: 20px
 // nd-hjob
-.nd-hjob
-    position: relative
 .nd-hjob__title
     color: #474D63
     font-size: 13px
     font-weight: 500
+    height: 100%
     cursor: pointer
     display: flex
     align-items: center
     gap: 5px
     i
         color: #474D63
+        font-size: 9px
     .icon-clock
-        font-size: 13px
+        font-size: 13.5px
+        position: relative
     .icon-ungle-bottom
         font-size: 5px
     span
-        height: 100%
         display: inline-block
-        line-height: 10px
+        letter-spacing: -0.1px
+.nd-hjob
+    position: relative
+    display: inline-flex
+    align-items: center
+    line-height: 100%
+    height: 100%
+    font-size: 13px
 .nd-htop__schema
     font-size: 13px
     color: $accent
     cursor: pointer
     position: relative
     z-index: 105
+    line-height: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    gap: 5px
     &:hover
         color: #FF833E
+    span
+        display: inline-block
 .nd-hjob__box-item
     display: flex
     justify-content: space-between
@@ -298,10 +345,13 @@ body
         padding-left: 17px
     +sm
         flex-direction: row-reverse
+        margin-left: auto
+    +xs
+        padding-left: 0
 .nd-hcenter__phone
     margin-right: auto
     +sm
-        width: 40px
+        min-width: 40px !important
         height: 40px
         background: $accent
         border-radius: 5px
@@ -345,7 +395,7 @@ body
     color: $primary
     font-size: 14px
     font-weight: 500
-    padding: 13.5px 18px
+    padding: 13.5px 15px
     border: 1px solid #E0E0E0
     border-radius: 5px
     display: inline-flex
@@ -353,10 +403,17 @@ body
     align-items: center
     justify-content: center
     +md
-        padding: 15px 14px
+        padding: 15px 12px
         font-size: 13px
     +sm
         height: 40px
+        padding: 15px 10px
+    span
+        font-weight: 600
+        +sm
+            font-size: 12px
+        +xs
+            font-size: 12px
 .nd-hcenter__btn1
     width: 157px
     &:hover
@@ -376,6 +433,13 @@ body
             display: none
     +sm
         width: 40px
+    img
+        width: 18px
+        +md
+            width: 14px
+        +sm
+            min-width: 24px
+            width: 24px
 .nd-hcenter__btn2
     width: 170px
     &:hover
@@ -385,9 +449,9 @@ body
     +md
         width: 154px
     +sm
-        width: 176px
+        min-width: 145px !important
+        width: 145px !important
     +xs
-        width: 156px
         padding: 0 10px
     i
         color: $accent
@@ -437,17 +501,38 @@ body
                 color: #fff
     +xs
         width: 46px
-    i
+    .icon-burger
         color: $accent
+        position: relative
+        top: -1px
+        margin-right: 3px
         +sm
             color: #fff
             font-size: 18px
+    .fa-close
+        font-size: 17px
+        position: relative
+        top: 1px
+        margin-right: 3px
     .nd-hbottom__title1
         +sm
             display: none
     .nd-hbottom__title2
+        +sm
+            font-size: 13px
+            font-weight: 500
         +xs
             display: none
+    .fa
+        +sm
+            display: none
+.nd-cat-mobile-ico
+    display: none
+    +sm
+        display: inline-block
+.nd-cat-desk-ico
+    +sm
+        display: none
 // nd-hbottom__menu
 .nd-hbottom__menu
     display: flex
@@ -469,13 +554,15 @@ body
 .nd-hbottom__point
     font-size: 13px
     color: $primary
+    &:hover
+        color: $accent
 /* ND-MENU */
 .container--menu
     position: relative
 .nd-menu--open
     top: 150px !important
     +sm
-        top: 125px !important
+        top: 115px !important
 .nd-menu
     background: #fff
     border-radius: 7px
@@ -497,24 +584,24 @@ body
         height: 619px
         width: 728px
         margin-left: -365px
+        grid-template-columns: 250px auto
     +sm
         display: flex
-        grid-template-columns: 249px minmax(482px, auto)
-        height: 555px
+        grid-template-columns: 185px minmax(482px, auto)
+        height: 78vh
         width: 96%
         margin-left: -48%
     +xs
         grid-template-columns: 127px 193px
 .nd-menu__left
     background: #F0F4FB
-    padding: 26px 30px
+    padding: 15px
     border-top-left-radius: 7px
     border-bottom-left-radius: 7px
+    display: flex
+    flex-direction: column
     +sm
-        padding: 22px
-        padding-top: 32px
-    +xs
-        padding: 22px 12px
+        padding: 0
 .nd-menu__right
     padding: 32px 43px
     max-height: 100%
@@ -578,10 +665,13 @@ body
 .nd-menu__basic
     display: flex
     flex-direction: column
-    gap: 18px
+    gap: 10px
     margin-bottom: 25px
-    +xs
-        gap: 10px
+    padding: 10px
+    padding-bottom: 0
+    +sm
+        padding: 30px 20px
+        padding-bottom: 0
 .nd-menu__basic-list a
     color: #0C0A3E
     font-weight: 500
@@ -594,33 +684,16 @@ body
 .nd-manother
     display: flex
     flex-direction: column
-    gap: 0
-.nd-manother__list
-    height: 30px
-.nd-manother__suplist
-    @extend .nd-htop__suplist
-    width: 100%
-    justify-content: space-between
-    cursor: pointer
-    i
-        display: inline-block
-        transform: rotate(270deg)
-        font-size: 10px
-    &:hover
-        i
-            color: $accent
-.nd-manother__list
-    &:hover
-        .nd-manother__submenu
-            display: flex
-.nd-manother__subpoint
-    color: #52617E
-    font-size: 14px
+    gap: 14px
+    margin-bottom: 36px
+    padding-left: 10px
+    +sm
+        padding-left: 20px
+.nd-manother__point
+    color: #474D63
+    font-size: 16px
     &:hover
         color: $accent
-.nd-manother__submenu
-    @extend .nd-htop__submenu
-    top: 20px
 .nd-menu__item-submenu
     display: flex
     flex-direction: column
@@ -630,8 +703,6 @@ body
     .nd-menu__item-sublist
         a
             color: #777B90
-.nd-manother__list
-    position: relative
 .nd-menu__item-suplist
     color: #474D63
     font-size: 14px
@@ -660,7 +731,8 @@ body
     +sm
         grid-template-columns: 1fr
         gap: 30px
-        height: 390px
+        height: 55vh
+        padding-bottom: 50px
 .nd-tab-active a
     color: $accent
 .nd-tab-item
@@ -685,6 +757,21 @@ body
     i
         +xs
             display: none
+    svg
+        +xs
+            display: none
+.nd-mbanner
+    background-color: #D7E5FC
+    background-image: url(../img/menu-banner-man.png)
+    background-repeat: no-repeat
+    background-position: bottom center
+    border-radius: 7px
+    padding: 25px 13px 0 13px
+    text-align: center
+    height: 346px
+    margin-top: auto
+    +sm
+        border-bottom-right-radius: 0
 /* nd-popup */
 .nd-popup
     width: 515px

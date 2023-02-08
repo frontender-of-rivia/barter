@@ -13,15 +13,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let burgerWord = document.querySelector('.nd-hbottom__title1');
     let menu = document.querySelector('.nd-menu');
     let closeIcon = document.querySelector('.nd-menu__close');
+    let burgerIcon = document.querySelector('.nd-hbottom__title i');
 
     burger.onclick = function(){
         if(menu.classList.contains('nd-menu--open')){
             menu.classList.remove('nd-menu--open');
             burgerWord.textContent = 'Открыть';
+            burgerIcon.classList.replace('fa-close', 'icon-burger');
             burger.classList.remove('nd-hbottom__title--menu-open');
         } else {
             menu.classList.add('nd-menu--open');
             burgerWord.textContent = 'Закрыть';
+            burgerIcon.classList.replace('icon-burger', 'fa-close');
             burger.classList.add('nd-hbottom__title--menu-open');
         }
     }
@@ -29,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         menu.classList.remove('nd-menu--open');
         burgerWord.textContent = 'Открыть';
         burger.classList.remove('nd-hbottom__title--menu-open');
+        burgerIcon.classList.replace('fa-close', 'icon-burger');
     }
     // подпункты
     let ndMenuItemLists = document.querySelectorAll('.nd-menu__item-list--father');
@@ -58,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 $('.nd-hbottom__title').addClass('nd-hbottom__title--fixed');
                 $('.nd-header').addClass('nd-header--fixed');
                 $('.nd-menu').addClass('nd-menu--fixed');
+                $('.nd-hcenter__btn2').addClass('nd-hcenter__btn2--fixed');
             }
             else if ($(this).scrollTop()<140){
                 $('.nd-hcenter__logo').removeClass('nd-hcenter__logo--fixed');
@@ -67,7 +72,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 $('.nd-hbottom__title').removeClass('nd-hbottom__title--fixed');
                 $('.nd-header').removeClass('nd-header--fixed');
                 $('.nd-menu').removeClass('nd-menu--fixed');
+                $('.nd-hcenter__btn2').removeClass('nd-hcenter__btn2--fixed');
             }
         });
+    });
+    // slick slider
+    $('.nd-clients__box').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        variableWidth: true,
+        dots: true,
+        appendArrows: $('.nd-clients__arrows'),
+        appendDots: $('.nd-clients__dots'),
     });
 });
